@@ -6,7 +6,6 @@ let consonantsPartOne = ["images/280/consonants/dr-3260.png", "images/280/conson
 let consonantsPartTwo = ["images/280/consonants/bl-119.png", "images/280/consonants/pl-219.png", "images/280/consonants/kl-2219.png", "images/280/consonants/sl-3819.png"];
 
 let consonants = [];
-
 let currentIndex = 0;
 let shuffledCards = [];
 let consonantImg = document.getElementById("consonant");
@@ -16,6 +15,8 @@ let counter = document.getElementById('counter');
 let suah = document.getElementById('suah'); // ‧ㄙㄨㄚ
 let keySpaceHint = document.getElementById('keySpaceHint');
 let audioPlayer = document.getElementById('audioPlayer');
+
+keySpaceHint.style.display = 'none';
 
 // 空白鍵監聽器
 function handleKeyPress(event) {
@@ -52,7 +53,6 @@ function initializeShuffle() {
     startButton.classList.remove('btn-success');
     startButton.classList.add('btn-danger');
     startButton.textContent = '點我開始';
-    keySpaceHint.style.display = 'none';
     // 啟用空白鍵監聽
     document.addEventListener('keydown', handleKeyPress);
 
@@ -93,6 +93,7 @@ function addIdtoTabPaneOne() {
         tabPane.id = 'partOne';
         document.body.style.backgroundColor = "rgb(255 243 242)";
         document.getElementById('partOne').classList.add('active');
+        document.getElementById('hint').style.display = 'none';
         initializeShuffle();
     }
 }
@@ -104,6 +105,7 @@ function addIdtoTabPaneTwo() {
         tabPane.id = 'partTwo';
         document.body.style.backgroundColor = "rgb(240 248 255)";
         document.getElementById('partTwo').classList.add('active');
+        document.getElementById('hint').style.display = 'none';
         initializeShuffle();
     }
 }
@@ -111,7 +113,13 @@ function addIdtoTabPaneTwo() {
 // 隨機音素組合
 function showRandomCard() {
     startButton.textContent = '下一個';
-    keySpaceHint.style.display = 'block';
+
+    // 小螢幕不顯示空白鍵提示
+    var currentWidth = window.innerWidth;
+    var maxWidth = 768;
+    if (currentWidth >= maxWidth) {
+        keySpaceHint.style.display = 'block';
+    }
 
     if (currentIndex < shuffledCards.length) {
         const card = shuffledCards[currentIndex];
@@ -531,7 +539,7 @@ function showRandomCard() {
                     audioPlayer.src = brick.audioSrc;
                 } else {
                     audioPlayer.style.display = 'none';
-                }t
+                }
 
                 break;
             }
@@ -542,7 +550,6 @@ function showRandomCard() {
 
     } else {
 
-        keySpaceHint.style.display = 'none';
         suah.style.display = 'block';
         counter.style.display = 'none';
 

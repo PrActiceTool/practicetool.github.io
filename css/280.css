@@ -11,12 +11,14 @@ img {
     width: 6rem;
 }
 
-#vowel {
+#vowel,
+#audioPlayer {
     position: relative;
     top: -2em;
 }
 
 @media (max-width: 575.98px) {
+
     .consonant-placeholder,
     .vowel-placeholder {
         width: 5rem;
