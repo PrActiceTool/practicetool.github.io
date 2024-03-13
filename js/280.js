@@ -1,9 +1,11 @@
 // 母音
-let vowels = ["images/280/vowels/45.png", "images/280/vowels/46.png", "images/280/vowels/47.png", "images/280/vowels/48.png", "images/280/vowels/49.png", "images/280/vowels/50.png", "images/280/vowels/62.png", "images/280/vowels/63.png", "images/280/vowels/64.png", "images/280/vowels/4647.png"];
+const vowels = ["images/280/vowels/45.png", "images/280/vowels/46.png", "images/280/vowels/47.png", "images/280/vowels/48.png", "images/280/vowels/49.png", "images/280/vowels/50.png", "images/280/vowels/62.png", "images/280/vowels/63.png", "images/280/vowels/64.png", "images/280/vowels/4647.png"];
 // 豬豬家族
-let consonantsPartOne = ["images/280/consonants/dr-3260.png", "images/280/consonants/tr-3360.png", "images/280/consonants/br-13560.png", "images/280/consonants/pr-23560.png"];
+const consonantsPartOne = ["images/280/consonants/dr-3260.png", "images/280/consonants/tr-3360.png", "images/280/consonants/br-13560.png", "images/280/consonants/pr-23560.png"];
 // 樂樂家族
-let consonantsPartTwo = ["images/280/consonants/bl-119.png", "images/280/consonants/pl-219.png", "images/280/consonants/kl-2219.png", "images/280/consonants/sl-3819.png"];
+const consonantsPartTwo = ["images/280/consonants/bl-119.png", "images/280/consonants/pl-219.png", "images/280/consonants/kl-2219.png", "images/280/consonants/sl-3819.png"];
+// 思思家族
+const consonantsPartThree = ["images/280/consonants/sm-383.png", "images/280/consonants/sn-3812.png", "images/280/consonants/sp-381.png", "images/280/consonants/st-3814.png", "images/280/consonants/sk-3821.png", "images/280/consonants/str-383260.png"];
 
 let consonants = [];
 let currentIndex = 0;
@@ -66,6 +68,14 @@ function initializeShuffle() {
     if (document.getElementById('partTwo')) {
         consonants = consonantsPartTwo;
     }
+    // 樂樂家族
+    if (document.getElementById('partThree')) {
+        consonants = consonantsPartThree;
+    }
+    // 280攻頂
+    if (document.getElementById('all')) {
+        consonants = consonants.concat(consonantsPartOne, consonantsPartTwo, consonantsPartThree);
+    }
 
     shuffleArray(consonants);
     shuffleArray(vowels);
@@ -91,7 +101,7 @@ function addIdtoTabPaneOne() {
     let tabPane = document.querySelector('.tab-pane');
     if (tabPane) {
         tabPane.id = 'partOne';
-        document.body.style.backgroundColor = "rgb(255 243 242)";
+        document.body.style.backgroundColor = "rgb(255 245 244)";
         document.getElementById('partOne').classList.add('active');
         document.getElementById('hint').style.display = 'none';
         initializeShuffle();
@@ -103,8 +113,32 @@ function addIdtoTabPaneTwo() {
     let tabPane = document.querySelector('.tab-pane');
     if (tabPane) {
         tabPane.id = 'partTwo';
-        document.body.style.backgroundColor = "rgb(240 248 255)";
+        document.body.style.backgroundColor = "rgb(235 247 255)";
         document.getElementById('partTwo').classList.add('active');
+        document.getElementById('hint').style.display = 'none';
+        initializeShuffle();
+    }
+}
+
+// 思思家族
+function addIdtoTabPaneThree() {
+    let tabPane = document.querySelector('.tab-pane');
+    if (tabPane) {
+        tabPane.id = 'partThree';
+        document.body.style.backgroundColor = "rgb(243 255 245)";
+        document.getElementById('partThree').classList.add('active');
+        document.getElementById('hint').style.display = 'none';
+        initializeShuffle();
+    }
+}
+
+// 280攻頂
+function addIdtoTabPaneAll() {
+    let tabPane = document.querySelector('.tab-pane');
+    if (tabPane) {
+        tabPane.id = 'all';
+        document.body.style.backgroundColor = "rgb(255 253 241)";
+        document.getElementById('all').classList.add('active');
         document.getElementById('hint').style.display = 'none';
         initializeShuffle();
     }
@@ -527,6 +561,306 @@ function showRandomCard() {
                 consonantBrick: "images/280/consonants/sl-3819.png",
                 vowelBrick: "images/280/vowels/4647.png",
                 audioSrc: "audios/280/c3819v4647.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/45.png",
+                audioSrc: "audios/280/c383v45.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/46.png",
+                audioSrc: "audios/280/c383v46.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/47.png",
+                audioSrc: "audios/280/c383v47.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/48.png",
+                audioSrc: "audios/280/c383v48.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/49.png",
+                audioSrc: "audios/280/c383v49.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/50.png",
+                audioSrc: "audios/280/c383v50.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/62.png",
+                audioSrc: "audios/280/c383v62.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/63.png",
+                audioSrc: "audios/280/c383v63.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/64.png",
+                audioSrc: "audios/280/c383v64.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sm-383.png",
+                vowelBrick: "images/280/vowels/4647.png",
+                audioSrc: "audios/280/c383v4647.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/45.png",
+                audioSrc: "audios/280/c3812v45.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/46.png",
+                audioSrc: "audios/280/c3812v46.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/47.png",
+                audioSrc: "audios/280/c3812v47.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/48.png",
+                audioSrc: "audios/280/c3812v48.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/49.png",
+                audioSrc: "audios/280/c3812v49.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/50.png",
+                audioSrc: "audios/280/c3812v50.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/62.png",
+                audioSrc: "audios/280/c3812v62.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/63.png",
+                audioSrc: "audios/280/c3812v63.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/64.png",
+                audioSrc: "audios/280/c3812v64.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sn-3812.png",
+                vowelBrick: "images/280/vowels/4647.png",
+                audioSrc: "audios/280/c3812v4647.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/45.png",
+                audioSrc: "audios/280/c381v45.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/46.png",
+                audioSrc: "audios/280/c381v46.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/47.png",
+                audioSrc: "audios/280/c381v47.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/48.png",
+                audioSrc: "audios/280/c381v48.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/49.png",
+                audioSrc: "audios/280/c381v49.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/50.png",
+                audioSrc: "audios/280/c381v50.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/62.png",
+                audioSrc: "audios/280/c381v62.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/63.png",
+                audioSrc: "audios/280/c381v63.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/64.png",
+                audioSrc: "audios/280/c381v64.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sp-381.png",
+                vowelBrick: "images/280/vowels/4647.png",
+                audioSrc: "audios/280/c381v4647.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/45.png",
+                audioSrc: "audios/280/c3814v45.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/46.png",
+                audioSrc: "audios/280/c3814v46.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/47.png",
+                audioSrc: "audios/280/c3814v47.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/48.png",
+                audioSrc: "audios/280/c3814v48.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/49.png",
+                audioSrc: "audios/280/c3814v49.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/50.png",
+                audioSrc: "audios/280/c3814v50.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/62.png",
+                audioSrc: "audios/280/c3814v62.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/63.png",
+                audioSrc: "audios/280/c3814v63.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/64.png",
+                audioSrc: "audios/280/c3814v64.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/st-3814.png",
+                vowelBrick: "images/280/vowels/4647.png",
+                audioSrc: "audios/280/c3814v4647.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/45.png",
+                audioSrc: "audios/280/c3821v45.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/46.png",
+                audioSrc: "audios/280/c3821v46.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/47.png",
+                audioSrc: "audios/280/c3821v47.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/48.png",
+                audioSrc: "audios/280/c3821v48.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/49.png",
+                audioSrc: "audios/280/c3821v49.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/50.png",
+                audioSrc: "audios/280/c3821v50.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/62.png",
+                audioSrc: "audios/280/c3821v62.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/63.png",
+                audioSrc: "audios/280/c3821v63.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/64.png",
+                audioSrc: "audios/280/c3821v64.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/sk-3821.png",
+                vowelBrick: "images/280/vowels/4647.png",
+                audioSrc: "audios/280/c3821v4647.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/45.png",
+                audioSrc: "audios/280/c383260v45.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/46.png",
+                audioSrc: "audios/280/c383260v46.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/47.png",
+                audioSrc: "audios/280/c383260v47.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/48.png",
+                audioSrc: "audios/280/c383260v48.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/49.png",
+                audioSrc: "audios/280/c383260v49.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/50.png",
+                audioSrc: "audios/280/c383260v50.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/62.png",
+                audioSrc: "audios/280/c383260v62.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/63.png",
+                audioSrc: "audios/280/c383260v63.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/64.png",
+                audioSrc: "audios/280/c383260v64.mp3",
+            },
+            {
+                consonantBrick: "images/280/consonants/str-383260.png",
+                vowelBrick: "images/280/vowels/4647.png",
+                audioSrc: "audios/280/c383260v4647.mp3",
             },
         ];
 
