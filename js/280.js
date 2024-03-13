@@ -59,6 +59,7 @@ function initializeShuffle() {
     document.addEventListener('keydown', handleKeyPress);
 
     shuffledCards = [];
+    consonants = [];
 
     // 豬豬家族
     if (document.getElementById('partOne')) {
