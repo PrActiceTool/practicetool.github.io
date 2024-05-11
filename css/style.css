@@ -43,13 +43,12 @@ img {
 
 #sounds8800 #vowel {
     position: relative;
-    left: -0.95em;
-
+    left: -1.75em;
 }
 
 #sounds8800 #consonant {
     position: relative;
-    left: 0.95em;
+    left: 1.75em;
 }
 
 @media (max-width: 767.98px) {
@@ -57,10 +56,12 @@ img {
     #sounds8800 #vowel,
     #sounds8800 #consonant {
         max-height: 5rem;
+        left: 0.95em;
+
     }
 
     #sounds8800 #vowel {
-        right: 1.85em;
+        left: -0.95em;
         top: 0;
     }
 }
