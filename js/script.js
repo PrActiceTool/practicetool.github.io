@@ -47,6 +47,16 @@ function shuffleArray(array) {
     }
 }
 
+// 當Modal關閉時停止影片播放
+let modals = document.querySelectorAll('.modal');
+modals.forEach(function (modal) {
+    modal.addEventListener('hidden.bs.modal', function () {
+        let iframe = modal.querySelector('#youtubeIframe');
+        let iframeSrc = iframe.src;
+        iframe.src = iframeSrc; // 重新設置iframe的src，以停止影片播放
+    });
+});
+
 // 初始化（預載圖片及洗牌）
 function initializeShuffle() {
     // 清牌
@@ -164,7 +174,8 @@ function addIdtoTabPaneAll() {
 // 隨機音素組合
 function showRandomCard() {
     if (document.getElementById('sounds8800')) {
-        descText.style.display = 'inline-block';
+        // 顯示「+20個尾子音」文字
+        descText.style.display = 'block';
     }
 
     startButton.textContent = '下一個';
@@ -172,14 +183,9 @@ function showRandomCard() {
 
     let currentWidth = window.innerWidth;
     let mediumDevices = 768;
-    let smallDevices = 576;
     // 螢幕寬度大於768時才顯示空白鍵提示
     if (currentWidth >= mediumDevices) {
         keySpaceHint.style.display = 'block';
-    }
-    // 螢幕小於576時將「+20個尾子音」換行
-    if (document.getElementById('sounds8800') && currentWidth <= smallDevices) {
-        descText.style.display = 'block';
     }
 
 
@@ -187,14 +193,14 @@ function showRandomCard() {
         const card = shuffledCards[currentIndex];
         consonantImg.src = card.consonant;
         vowelImg.src = card.vowel;
-        
-        document.addEventListener("visibilitychange", function() {
+
+        document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
-                // 網頁不可見時，暫停播放音樂
+                // 網頁不可見時，暫停播放
                 audioPlayer.pause();
             }
         });
-        
+
         // 檢查組合並顯示對應音檔
         const bricks = [
             {
@@ -2698,16 +2704,6 @@ function showRandomCard() {
 
     }
 }
-
-// 當Modal關閉時停止影片播放
-let modals = document.querySelectorAll('.modal');
-modals.forEach(function (modal) {
-    modal.addEventListener('hidden.bs.modal', function () {
-        let iframe = modal.querySelector('#youtubeIframe');
-        let iframeSrc = iframe.src;
-        iframe.src = iframeSrc; // 重新設置iframe的src，以停止影片播放
-    });
-});
 
 // 重新開始
 function restart() {

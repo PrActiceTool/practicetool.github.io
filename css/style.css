@@ -43,11 +43,13 @@ img {
 
 #sounds8800 #vowel {
     position: relative;
-    right: 3.5em;
+    left: -0.95em;
+
 }
 
 #sounds8800 #consonant {
-    margin-left: 1em;
+    position: relative;
+    left: 0.95em;
 }
 
 @media (max-width: 767.98px) {
@@ -63,8 +65,14 @@ img {
     }
 }
 
+/* 「+20個尾子音」 */
 #descText {
     display: none;
+}
+
+#sounds8800 #audioPlayer {
+    margin-top: 3.5em;
+    margin-bottom: 5em;
 }
 
 /*‧ㄙㄨㄚ垂直置中 */

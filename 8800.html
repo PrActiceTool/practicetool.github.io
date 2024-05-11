@@ -13,6 +13,18 @@
 </head>
 
 <body>
+    <!-- 公告 -->
+    <div class="bg-danger-subtle text-center py-1">
+        祝福全天下所有母親，此刻至永遠 <a href="https://www.youtube.com/watch?v=1X_5JwuGRQg" target="_blank"
+            class="link-danger text-decoration-none">My mom<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path
+                    d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2" />
+                <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
+            </svg></a>
+    </div>
+
     <!-- 主選單 -->
     <nav class="navbar navbar-expand bg-body-tertiary" data-bs-theme="dark">
         <div class="container">
@@ -52,11 +64,12 @@
                 <div class="d-inline-block">
                     <img id="vowel" src="">
                 </div>
-                <div id="descText" class="display-4 fw-medium align-middle">+20個尾子音</div>
             </div>
 
+            <div id="descText" class="mt-2 display-4 fw-medium align-middle text-center">+20個尾子音</div>
+
             <!-- 示範音檔 -->
-            <audio id="audioPlayer" class="mx-auto mt-5 mb-3 w-100" controls>
+            <audio id="audioPlayer" class="mx-auto w-75" controls>
                 如果您看到這段訊息，表示您的瀏覽器無法播放這段音頻。
             </audio>
 
@@ -102,7 +115,7 @@
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">恭喜您完成練習！</h1>
                     </div>
                     <div class="modal-body">
-                        <p>為您自己的努力掌聲鼓勵👏👏👏，休息一下，去散個步，讓我們繼續做下去</p>
+                        <p>為您自己的努力掌聲鼓勵👏👏👏。休息一下，一步一腳印，讓我們繼續走下去</p>
                         <div class="ratio ratio-16x9">
                             <iframe id="youtubeIframe" src="https://www.youtube.com/embed/ycQ6-Xbz93M?rel=0"
                                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
@@ -111,6 +124,8 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" onclick="restart()"
                             data-bs-dismiss="modal">再來一次</button>
+                        <a class="btn btn-outline-danger" href="https://www.milinguall.com/tls_blog.aspx?id=271"
+                            role="button" target="_blank">PA發音認證</a>
                     </div>
                 </div><!-- .modal-content -->
             </div>
