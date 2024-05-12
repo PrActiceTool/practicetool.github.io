@@ -73,6 +73,46 @@
             </li>
         </ul>
 
+        <!-- 子項目選擇提示 -->
+        <div id="hint" class="alert alert-danger mt-3 mx-auto" role="alert" style="max-width: 10rem;">
+            請選擇您要練習的子項目<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-index-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046z" />
+            </svg>
+        </div>
+
+        <!-- Main Content -->
+        <div class="tab-content mt-3">
+            <div class="tab-pane" id="" role="tabpanel" tabindex="0">
+                <div style="margin-bottom: 10rem;">
+                    <!-- 子音積木 -->
+                    <div class="consonant-placeholder">
+                        <img id="consonant" src="">
+                    </div>
+                    <!-- 母音積木 -->
+                    <div class="vowel-placeholder">
+                        <img id="vowel" src="">
+                    </div>
+                    <!-- 示範音檔 -->
+                    <audio id="audioPlayer" class="mx-auto" controls>
+                        如果您看到這段訊息，表示您的瀏覽器無法播放這段音頻。
+                    </audio>
+                </div>
+
+                <!-- 按鈕 -->
+                <div class="py-4 bg-body-tertiary shadow-lg text-center fixed-bottom">
+                    <!--‧ㄙㄨㄚ -->
+                    <div id="suah" class="mb-3 mx-auto fw-bold fs-5">‧ㄙㄨㄚ</div>
+                    <!-- 計數器 -->
+                    <div id="counter" class="mb-2 text-center">0</div>
+                    <button type="button" class="btn btn-danger btn-lg" onclick="showRandomCard()" id="start"></button>
+                    <p id="keySpaceHint" class="mt-1 small text-secondary text-center">可使用空白鍵</p>
+                </div>
+
+            </div>
+        </div>
+
         <!-- 暖身33吐舌歌modal -->
         <div class="modal fade" id="warmupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -91,46 +131,6 @@
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">暖身完成，馬上開始</button>
                     </div>
                 </div><!-- .modal-content -->
-            </div>
-        </div>
-
-        <!-- 子項目選擇提示 -->
-        <div id="hint" class="alert alert-danger mt-3 mx-auto" role="alert" style="max-width: 10rem;">
-            請選擇您要練習的子項目<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-hand-index-fill" viewBox="0 0 16 16">
-                <path
-                    d="M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046z" />
-            </svg>
-        </div>
-
-        <!-- Main Content -->
-        <div class="tab-content mt-3">
-            <div class="tab-pane" id="" role="tabpanel" tabindex="0">
-                <div class="mt-sm-4" style="margin-bottom: 10rem;">
-                    <!-- 子音積木 -->
-                    <div class="consonant-placeholder">
-                        <img id="consonant" src="">
-                    </div>
-                    <!-- 母音積木 -->
-                    <div class="vowel-placeholder">
-                        <img id="vowel" src="">
-                    </div>
-                    <!-- 示範音檔 -->
-                    <audio id="audioPlayer" class="mx-auto mt-2 mb-3" controls>
-                        如果您看到這段訊息，表示您的瀏覽器無法播放這段音頻。
-                    </audio>
-                </div>
-
-                <!-- 按鈕 -->
-                <div class="py-4 bg-body-tertiary shadow-lg text-center fixed-bottom">
-                    <!--‧ㄙㄨㄚ -->
-                    <div id="suah" class="mb-3 mx-auto fw-bold fs-5">‧ㄙㄨㄚ</div>
-                    <!-- 計數器 -->
-                    <div id="counter" class="mb-2 text-center">0</div>
-                    <button type="button" class="btn btn-danger btn-lg" onclick="showRandomCard()" id="start"></button>
-                    <p id="keySpaceHint" class="mt-1 small text-secondary text-center">可使用空白鍵</p>
-                </div>
-
             </div>
         </div>
 

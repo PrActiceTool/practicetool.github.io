@@ -6,15 +6,13 @@ img {
 
 .consonant-placeholder,
 .vowel-placeholder {
-    position: relative;
     margin: auto;
     width: 6rem;
 }
 
-.vowel-placeholder #vowel,
-#audioPlayer {
+.vowel-placeholder #vowel {
     position: relative;
-    top: -2em;
+    top: -1.95em;
 }
 
 @media (max-width: 575.98px) {
@@ -24,7 +22,7 @@ img {
         width: 5rem;
     }
 
-    #vowel {
+    .vowel-placeholder #vowel {
         top: -1.65em;
     }
 }
@@ -62,7 +60,6 @@ img {
 
     #sounds8800 #vowel {
         left: -0.95em;
-        top: 0;
     }
 }
 
@@ -73,7 +70,13 @@ img {
 
 #sounds8800 #audioPlayer {
     margin-top: 3.5em;
-    margin-bottom: 5em;
+}
+
+@media (max-width: 575.98px) {
+    #sounds8800 #audioPlayer {
+        margin-top: 2em;
+        margin-bottom: 8em;
+    }
 }
 
 /*‧ㄙㄨㄚ垂直置中 */
