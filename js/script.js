@@ -2675,7 +2675,7 @@ function showRandomCard() {
                 }
                 break;
             }
-
+            audioPlayer.pause();
             audioPlayer.style.display = 'none';
         }
 
@@ -2684,7 +2684,6 @@ function showRandomCard() {
 
     } else {
         audioPlayer.pause();
-
         audioPlayer.style.display = 'none';
 
         suah.style.display = 'block';

@@ -55,7 +55,6 @@ img {
     #sounds8800 #consonant {
         max-height: 5rem;
         left: 0.95em;
-
     }
 
     #sounds8800 #vowel {
@@ -72,7 +71,7 @@ img {
     margin-top: 3.5em;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     #sounds8800 #audioPlayer {
         margin-top: 2em;
         margin-bottom: 8em;
