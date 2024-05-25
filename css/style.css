@@ -35,7 +35,8 @@ img {
 }
 
 #sounds8800 #vowel,
-#sounds8800 #consonant {
+#sounds8800 #consonant,
+#exam {
     max-height: 10rem;
 }
 
@@ -52,7 +53,8 @@ img {
 @media (max-width: 767.98px) {
 
     #sounds8800 #vowel,
-    #sounds8800 #consonant {
+    #sounds8800 #consonant,
+    #exam {
         max-height: 5rem;
         left: 0.95em;
     }
@@ -67,13 +69,17 @@ img {
     display: none;
 }
 
-#sounds8800 #audioPlayer {
+#sounds8800 #audioPlayer,
+#cert8800 #audioPlayer {
     margin-top: 3.5em;
 }
 
 @media (max-width: 767.98px) {
-    #sounds8800 #audioPlayer {
+
+    #sounds8800 #audioPlayer,
+    #cert8800 #audioPlayer {
         margin-top: 2em;
+        /* 避免播放器無法顯示在視窗範圍內 */
         margin-bottom: 8em;
     }
 }
