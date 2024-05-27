@@ -26,7 +26,7 @@
     </div>
 
     <!-- 主選單 -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="/"><span class="fw-bold" style="color: #FFB2A8;">P</span>r<span
                     class="fw-bold" style="color: #8EC3E5;">A</span>cticeTool</a>
@@ -40,9 +40,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 mt-3 mt-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">140音</a>
+                        <a class="nav-link" href="140.html">140音</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">280音</a>
@@ -120,7 +120,8 @@
                     <!--‧ㄙㄨㄚ -->
                     <div id="suah" class="mb-3 mx-auto fw-bold fs-5">‧ㄙㄨㄚ</div>
                     <!-- 計數器 -->
-                    <div id="counter" class="mb-2 text-center">0</div>
+                    <div id="counter" class="mb-2 text-center"><span id="counterStart">0</span> / <span
+                            id="totalCounter">0</span></div>
                     <button type="button" class="btn btn-danger btn-lg" onclick="showRandomCard()" id="start"></button>
                     <p id="keySpaceHint" class="mt-1 small text-secondary text-center">可使用空白鍵</p>
                 </div>
@@ -166,9 +167,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" onclick="restart()"
-                            data-bs-dismiss="modal">繼續練習</button>
-                        <a class="btn btn-outline-danger" href="https://www.milinguall.com/tls_blog.aspx?id=271"
-                            role="button" target="_blank">PA發音認證</a>
+                            data-bs-dismiss="modal">再戰一回</button>
                     </div>
                 </div><!-- .modal-content -->
             </div>

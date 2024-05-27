@@ -1,3 +1,7 @@
+// 140子音
+const consonants140 = ["images/consonants/beginning/b.png", "images/consonants/beginning/p.png", "images/consonants/beginning/m.png", "images/consonants/beginning/f.png", "images/consonants/beginning/d.png", "images/consonants/beginning/t.png", "images/consonants/beginning/n.png", "images/consonants/beginning/l.png", "images/consonants/beginning/g.png", "images/consonants/beginning/k.png", "images/consonants/beginning/h.png", "images/consonants/beginning/s.png", "images/consonants/beginning/th.png", "images/consonants/beginning/th_z.png", "images/consonants/beginning/r.png",];
+// 140母音
+const vowels140 = ["images/vowels/e.png", "images/vowels/a_e.png", "images/vowels/a.png", "images/vowels/ou.png", "images/vowels/i.png", "images/vowels/oo.png", "images/vowels/o_e.png", "images/vowels/o.png", "images/vowels/er.png", "images/vowels/ar.png",];
 // 280母音
 const vowels280 = ["images/280/vowels/45.png", "images/280/vowels/46.png", "images/280/vowels/47.png", "images/280/vowels/48.png", "images/280/vowels/49.png", "images/280/vowels/50.png", "images/280/vowels/62.png", "images/280/vowels/63.png", "images/280/vowels/64.png", "images/280/vowels/4647.png"];
 // 豬豬家族
@@ -8,12 +12,12 @@ const consonantsPartTwo = ["images/280/consonants/bl-119.png", "images/280/conso
 const consonantsPartThree = ["images/280/consonants/sm-383.png", "images/280/consonants/sn-3812.png", "images/280/consonants/sp-381.png", "images/280/consonants/st-3814.png", "images/280/consonants/sk-3821.png", "images/280/consonants/str-383260.png"];
 
 // 8800母音
-const vowels8800 = ["images/8800/vowels/a.png", "images/8800/vowels/e.png", "images/8800/vowels/i.png", "images/8800/vowels/o.png", "images/8800/vowels/u.png", "images/8800/vowels/a_e.png", "images/8800/vowels/e_e.png", "images/8800/vowels/i_e.png", "images/8800/vowels/o_e.png", "images/8800/vowels/u_e.png", "images/8800/vowels/ar.png", "images/8800/vowels/er.png", "images/8800/vowels/or.png", "images/8800/vowels/oo.png", "images/8800/vowels/ou.png", "images/8800/vowels/oi.png", "images/8800/vowels/air.png", "images/8800/vowels/ear.png"];
+const vowels8800 = ["images/vowels/a.png", "images/vowels/e.png", "images/vowels/i.png", "images/vowels/o.png", "images/vowels/u.png", "images/vowels/a_e.png", "images/vowels/e_e.png", "images/vowels/i_e.png", "images/vowels/o_e.png", "images/vowels/u_e.png", "images/vowels/ar.png", "images/vowels/er.png", "images/vowels/or.png", "images/vowels/oo.png", "images/vowels/ou.png", "images/vowels/oi.png", "images/vowels/air.png", "images/vowels/ear.png"];
 // 8800頭子音
-const beginningConsonants8800 = ["images/8800/consonants/beginning/b.png", "images/8800/consonants/beginning/p.png", "images/8800/consonants/beginning/m.png", "images/8800/consonants/beginning/f.png", "images/8800/consonants/beginning/d.png", "images/8800/consonants/beginning/t.png", "images/8800/consonants/beginning/n.png", "images/8800/consonants/beginning/l.png", "images/8800/consonants/beginning/g.png", "images/8800/consonants/beginning/k.png", "images/8800/consonants/beginning/h.png", "images/8800/consonants/beginning/dr.png", "images/8800/consonants/beginning/tr.png", "images/8800/consonants/beginning/r.png", "images/8800/consonants/beginning/s.png", "images/8800/consonants/beginning/sk.png", "images/8800/consonants/beginning/sp.png", "images/8800/consonants/beginning/st.png", "images/8800/consonants/beginning/str.png", "images/8800/consonants/beginning/th.png"];
+const beginningConsonants8800 = ["images/consonants/beginning/b.png", "images/consonants/beginning/p.png", "images/consonants/beginning/m.png", "images/consonants/beginning/f.png", "images/consonants/beginning/d.png", "images/consonants/beginning/t.png", "images/consonants/beginning/n.png", "images/consonants/beginning/l.png", "images/consonants/beginning/g.png", "images/consonants/beginning/k.png", "images/consonants/beginning/h.png", "images/consonants/beginning/dr.png", "images/consonants/beginning/tr.png", "images/consonants/beginning/r.png", "images/consonants/beginning/s.png", "images/consonants/beginning/sk.png", "images/consonants/beginning/sp.png", "images/consonants/beginning/st.png", "images/consonants/beginning/str.png", "images/consonants/beginning/th.png"];
 
 // 8800認證.2024
-const cert8800TwentyTwentyFour = ["images/8800/cert/2024/01-ou.png", "images/8800/cert/2024/02-trai.png", "images/8800/cert/2024/03-he.png", "images/8800/cert/2024/04-ra.png", "images/8800/cert/2024/05-li.png", "images/8800/cert/2024/06-do.png", "images/8800/cert/2024/07-strar.png", "images/8800/cert/2024/08-cler.png", "images/8800/cert/2024/09-thee.png", "images/8800/cert/2024/10-sto.png",];
+const cert8800TwentyTwentyFour = ["images/cert/2024/8800/01-ou.png", "images/cert/2024/8800/02-trai.png", "images/cert/2024/8800/03-he.png", "images/cert/2024/8800/04-ra.png", "images/cert/2024/8800/05-li.png", "images/cert/2024/8800/06-do.png", "images/cert/2024/8800/07-strar.png", "images/cert/2024/8800/08-cler.png", "images/cert/2024/8800/09-thee.png", "images/cert/2024/8800/10-sto.png",];
 
 let consonants = [];
 let vowels = [];
@@ -27,6 +31,8 @@ let examImg = document.getElementById("exam");
 
 let startButton = document.getElementById('start');
 let counter = document.getElementById('counter');
+let counterStart = document.getElementById('counterStart');
+let totalCounter = document.getElementById('totalCounter');
 let suah = document.getElementById('suah'); // ‧ㄙㄨㄚ
 let descText = document.getElementById('descText'); // 一般說明文字
 
@@ -36,8 +42,8 @@ let audioPlayer = document.getElementById('audioPlayer');
 let sounds280 = document.getElementById('sounds280');
 let cert8800 = document.getElementById('cert8800');
 let sounds8800 = document.getElementById('sounds8800');
+let sounds140 = document.getElementById('sounds140');
 
-keySpaceHint.style.display = 'none';
 
 // 積木組合與對應音檔
 let bricks = [];
@@ -90,7 +96,8 @@ function initializeShuffle() {
 
     audioPlayer.style.display = 'none';
     suah.style.display = 'none';
-    counter.style.display = 'block';
+    counter.style.display = 'none';
+    keySpaceHint.style.display = 'none';
 
     startButton.removeAttribute('data-bs-toggle', 'modal');
     startButton.removeAttribute('data-bs-target', '#staticBackdrop');
@@ -104,6 +111,11 @@ function initializeShuffle() {
     shuffledCards = [];
     consonants = [];
     vowels = vowels280;
+
+    if (sounds140) {
+        vowels = vowels140;
+        consonants = consonants140;
+    }
 
     // 豬豬家族
     if (document.getElementById('partOne')) {
@@ -147,8 +159,8 @@ function initializeShuffle() {
     shuffleArray(shuffledCards);
 
     currentIndex = 0;
-    counter.textContent = currentIndex;
-
+    counterStart.textContent = currentIndex;
+    totalCounter.textContent = shuffledCards.length;
 }
 
 initializeShuffle();
@@ -214,6 +226,7 @@ function showRandomCard() {
         descText.style.display = 'block';
     }
 
+    counter.style.display = 'block';
     startButton.textContent = '下一個';
 
 
@@ -245,7 +258,7 @@ function showRandomCard() {
 
         // 確認音檔及組合
         for (const brick of bricks) {
-            if (((sounds280 || sounds8800) && (card.consonant === brick.consonantBrick && card.vowel === brick.vowelBrick)) || (cert8800 && (card === brick.examBrick))) {
+            if (((sounds280 || sounds8800) && (card.consonant === brick.consonantBrick && card.vowel === brick.vowelBrick)) || (cert8800 && (card === brick.examBrick)) || (sounds140 && (card.consonant === brick.consonantBrick140 && card.vowel === brick.vowelBrick140))) {
 
                 // 確認音檔存在
                 if (brick.audioSrc) {
@@ -261,7 +274,7 @@ function showRandomCard() {
         }
 
         currentIndex++;
-        counter.textContent = currentIndex;
+        counterStart.textContent = currentIndex;
 
     } else {
         // 當牌組跑完就暫停播放音檔並隱藏播放器
@@ -273,8 +286,6 @@ function showRandomCard() {
         }
 
         suah.style.display = 'block';
-        counter.style.display = 'none';
-
         startButton.classList.remove('btn-danger');
         startButton.classList.add('btn-success');
         startButton.textContent = '點我完成';

@@ -36,16 +36,20 @@ img {
 
 #sounds8800 #vowel,
 #sounds8800 #consonant,
+#sounds140 #vowel,
+#sounds140 #consonant,
 #exam {
     max-height: 10rem;
 }
 
-#sounds8800 #vowel {
+#sounds8800 #vowel,
+#sounds140 #vowel {
     position: relative;
     left: -1.75em;
 }
 
-#sounds8800 #consonant {
+#sounds8800 #consonant,
+#sounds140 #consonant {
     position: relative;
     left: 1.75em;
 }
@@ -54,12 +58,15 @@ img {
 
     #sounds8800 #vowel,
     #sounds8800 #consonant,
+    #sounds140 #vowel,
+    #sounds140 #consonant,
     #exam {
         max-height: 5rem;
         left: 0.95em;
     }
 
-    #sounds8800 #vowel {
+    #sounds8800 #vowel,
+    #sounds140 #vowel {
         left: -0.95em;
     }
 }

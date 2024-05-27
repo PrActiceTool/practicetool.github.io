@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>8800音 - PA練習小工具</title>
+    <title>8800音考題 - PA練習小工具</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -26,7 +26,7 @@
     </div>
 
     <!-- 主選單 -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="/"><span class="fw-bold" style="color: #FFB2A8;">P</span>r<span
                     class="fw-bold" style="color: #8EC3E5;">A</span>cticeTool</a>
@@ -40,9 +40,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 mt-3 mt-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">140音</a>
+                        <a class="nav-link" href="140.html">140音</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="280.html">280音</a>
@@ -66,7 +66,7 @@
     </nav>
 
     <div class="container py-3">
-        <h1 class="text-center visually-hidden">8800音練習</h1>
+        <h1 class="text-center visually-hidden">8800音考題</h1>
 
         <div class="dropdown text-center mt-3">
             <button class="btn btn-secondary dropdown-toggle disabled" type="button" data-bs-toggle="dropdown"
@@ -101,7 +101,7 @@
                 <!--‧ㄙㄨㄚ -->
                 <div id="suah" class="mb-3 mx-auto fw-bold fs-5">‧ㄙㄨㄚ</div>
                 <!-- 計數器 -->
-                <div id="counter" class="mb-2 text-center">0</div>
+                <div id="counter" class="mb-2 text-center"><span id="counterStart">0</span> / <span id="totalCounter">0</span></div>
                 <button type="button" class="btn btn-danger btn-lg" onclick="showRandomCard()" id="start"></button>
                 <p id="keySpaceHint" class="mt-1 small text-secondary text-center">可使用空白鍵</p>
             </div>
@@ -138,9 +138,9 @@
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">恭喜您完成練習！</h1>
                     </div>
                     <div class="modal-body">
-                        <p>為您自己的努力掌聲鼓勵👏👏👏。休息一下，一步一腳印，讓我們繼續走下去</p>
+                        <p></p>
                         <div class="ratio ratio-16x9">
-                            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/ycQ6-Xbz93M?rel=0"
+                            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/H7_keCF3bpA?rel=0"
                                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
                         </div>
                     </div>
