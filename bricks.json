@@ -3434,5 +3434,45 @@
   {
     "examBrick": "images/cert/2024/8800/10-sto.png",
     "audioSrc": "audios/8800/20CVC_ST/20CVC_STO.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/01-o.png",
+    "audioSrc": "audios/8800/02VC_O/02VC_O.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/02-row.png",
+    "audioSrc": "audios/8800/16CVC_R/16CVC_ROU.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/03-cler.png",
+    "audioSrc": "audios/8800/cert/03-cler.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/04-smar.png",
+    "audioSrc": "audios/8800/cert/04-smar.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/05-they.png",
+    "audioSrc": "audios/8800/22CVC_TH/22CVC_THA_E.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/06-ta.png",
+    "audioSrc": "audios/8800/08CVC_T/08CVC_TA.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/07-le.png",
+    "audioSrc": "audios/8800/10CVC_L/10CVC_LE.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/08-thou.png",
+    "audioSrc": "audios/8800/22CVC_TH/22CVC_THOU.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/09-sti.png",
+    "audioSrc": "audios/8800/20CVC_ST/20CVC_STI.mp3"
+  },
+  {
+    "examBrick": "images/cert/2025/8800/10-for.png",
+    "audioSrc": "audios/8800/06CVC_F/06CVC_FOR.mp3"
   }
 ]
