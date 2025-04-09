@@ -3441,7 +3441,7 @@
   },
   {
     "examBrick": "images/cert/2025/8800/02-row.png",
-    "audioSrc": "audios/8800/16CVC_R/16CVC_ROU.mp3"
+    "audioSrc": "audios/8800/16CVC_R/16CVC_ROO.mp3"
   },
   {
     "examBrick": "images/cert/2025/8800/03-cler.png",
@@ -3450,10 +3450,6 @@
   {
     "examBrick": "images/cert/2025/8800/04-smar.png",
     "audioSrc": "audios/8800/cert/04-smar.mp3"
-  },
-  {
-    "examBrick": "images/cert/2025/8800/05-they.png",
-    "audioSrc": "audios/8800/22CVC_TH/22CVC_THA_E.mp3"
   },
   {
     "examBrick": "images/cert/2025/8800/06-ta.png",
