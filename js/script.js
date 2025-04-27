@@ -20,7 +20,7 @@ const beginningConsonants8800 = ["images/consonants/beginning/b.png", "images/co
 const cert8800TwentyTwentyFour = ["images/cert/2024/8800/01-ou.png", "images/cert/2024/8800/02-trai.png", "images/cert/2024/8800/03-he.png", "images/cert/2024/8800/04-ra.png", "images/cert/2024/8800/05-li.png", "images/cert/2024/8800/06-do.png", "images/cert/2024/8800/07-strar.png", "images/cert/2024/8800/08-cler.png", "images/cert/2024/8800/09-thee.png", "images/cert/2024/8800/10-sto.png",];
 
 // 8800認證.2025
-const cert8800TwentyTwentyFive = ["images/cert/2025/8800/01-o.png", "images/cert/2025/8800/02-row.png", "images/cert/2025/8800/03-cler.png", "images/cert/2025/8800/04-smar.png", "images/cert/2025/8800/05-they.png", "images/cert/2025/8800/06-ta.png", "images/cert/2025/8800/07-le.png", "images/cert/2025/8800/08-thou.png", "images/cert/2025/8800/09-sti.png", "images/cert/2025/8800/10-for.png",];
+const cert8800TwentyTwentyFive = ["images/cert/2025/8800/01-o.png", "images/cert/2025/8800/02-roe.png", "images/cert/2025/8800/03-cler.png", "images/cert/2025/8800/04-smar.png", "images/cert/2025/8800/05-they.png", "images/cert/2025/8800/06-ta.png", "images/cert/2025/8800/07-le.png", "images/cert/2025/8800/08-thou.png", "images/cert/2025/8800/09-sti.png", "images/cert/2025/8800/10-for.png",];
 
 let selectedYear = "2025"; // 全域變數，預設年份
 
@@ -143,7 +143,7 @@ function initializeShuffle() {
         consonants = beginningConsonants8800;
         vowels = vowels8800;
     }
-    // 8800認證.2024
+    // 8800認證
     if (cert8800) {
         if (selectedYear === "2024") {
             shuffledCards = cert8800TwentyTwentyFour;
